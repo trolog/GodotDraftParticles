@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://player.gd" type="Script" id=2]
+[ext_resource path="res://standing_torch.tscn" type="PackedScene" id=3]
+
+[node name="main" type="Node2D"]
+
+[node name="player" type="Sprite" parent="."]
+position = Vector2( 121.661, 165.87 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="standing_torch" parent="." instance=ExtResource( 3 )]
+position = Vector2( 165.256, 176.082 )
+
+[editable path="standing_torch"]
